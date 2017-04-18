@@ -23,7 +23,7 @@ public class mainLoop{
 	boolean sparseTraverse = true;
 	boolean finishedFlag = false;
 	
-	public Point nextPoint(List<Point> wPoints){
+	private Point nextPoint(List<Point> wPoints){
 		int x = blueRov.getX();
 		int y = blueRov.getY();
 		Point p = wPoints.get(0);
