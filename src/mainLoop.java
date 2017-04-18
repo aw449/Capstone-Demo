@@ -169,7 +169,8 @@ public class mainLoop{
 		wayPoints = wpGenerator.sparseWayPointGen(step_size);
 		worldOrder = new World(size_x,size_y);
 		simWorld = new double[size_x][size_y];
-		
+		this.sparseTraverse = true;
+		this.finishedFlag = false;
 		
 		try {
 			simWorld = txtRead.readFile(pathname, size_x, size_y);
